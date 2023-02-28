@@ -18,5 +18,5 @@ Assets
 ------
 Here's a picture of the test-bed I used to test the accuracy of the Power Meter.
 
-![pulse_led_test_bed](pulse_led_test_bed.jpg)
+![pulse_led_test_bed](./assets/images/pulse_led_test_bed.jpg)
 
