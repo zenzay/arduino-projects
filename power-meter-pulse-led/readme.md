@@ -3,9 +3,9 @@ Power Meter Pulse LED
 
 A simple Arduino sketch to simulate the Pulse-LED, found on some Electricity Power Meters.
 
-It only does fixed wattage, for now. I tried to do some simulation of real power consumption patterns, but that made the whole thing crash after a couple of hours. Not sure why, and not interested in following it up, as I don't need it.
+It only does fixed wattage, for now. I've thought about doing some kind of simulation of real power consumption patterns, I but don't need or have any use for that. I basically only need a fixed wattage, so I easily can check the accuracy of the device which is tracking usage with a Photodiode.
 
-The parameters are set in the code.
+The default power consumption is set at 1000 Watt, with a pulse rate of 1000 blinks per kWh, but you can change that in the code.
 
 Components
 ----------
