@@ -3,9 +3,9 @@ Power Meter Pulse LED
 
 A simple Arduino sketch to simulate the Pulse-LED, found on some Electricity Power Meters.
 
-The parameters are set in the code. It can do fixed power consumption or randomized.
+It only does fixed wattage, for now. I tried to do some simulation of real power consumption patterns, but that made the whole thing crash after a couple of hours. Not sure why, and not interested in following it up, as I don't need it.
 
-Note: I haven't tested the randomize function extensively. I have had it running for 12 hours without issues though. Using fixed intervals has been tested running for a week, still keeping exact timings.
+The parameters are set in the code.
 
 Components
 ----------
