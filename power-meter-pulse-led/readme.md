@@ -16,7 +16,7 @@ Components
 
 Assets
 ------
-Here's a picture of the test-bed I used to test the accuracy of the Power Meter.
+Here's a picture of the test-bed I used to test the accuracy of my [ESPHome Power Meter](https://github.com/zenzay/esphome-projects/tree/main/power-meter).
 
 ![pulse_led_test_bed](./assets/images/pulse_led_test_bed.jpg)
 
