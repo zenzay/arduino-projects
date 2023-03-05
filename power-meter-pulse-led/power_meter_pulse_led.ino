@@ -4,7 +4,7 @@ const int led_pin = 16;
 const int pulse_duration = 100;
 const float power_consumption = 1000;
 const float pulse_rate = 1000;
-const float hour_ms = 3600000;
+const unsigned long hour_ms = 3600000;
 
 unsigned long now;
 unsigned long last_pulse;
