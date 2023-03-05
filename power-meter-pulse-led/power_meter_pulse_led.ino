@@ -12,16 +12,16 @@ int led_state = LOW;
 
 void setup() {
   pinMode(led_pin, OUTPUT);
-  pulse_interval = ( 60 * 60 * 1000 / power_consumption ) * (pulse_rate / 1000.0);
+  pulse_interval = ceil(power_consumption / pulse_rate * 60 * 60);
   last_pulse = millis();
 }
 
 void loop() {
   now = millis();
-  if ( (now - last_pulse) >= pulse_interval) {
+  if ( (now - last_pulse) > pulse_interval) {
     led_state = !led_state;
     digitalWrite(led_pin, led_state);
-    last_pulse = now;
+    last_pulse = millis();
   } else if (led_state == HIGH) {
     if ( (now - last_pulse) >= pulse_duration) {
       led_state = !led_state;
