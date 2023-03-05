@@ -7,6 +7,8 @@ It only does fixed wattage, for now. I've thought about doing some kind of simul
 
 The default power consumption is set at 1000 Watt, with a pulse rate of 1000 blinks per kWh, but you can change that in the code.
 
+Note: It's a bit inaccurate at specific high levels of simulated power consumption. 2100 Watt, for example. It'll keep the intervals steady but the LED will pulse slightly too fast or slow, and thus not reflect the set level *exactly* - it'll be 1 or 2 watts off. I'm putting this down to rounding errors.
+
 Components
 ----------
 
