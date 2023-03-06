@@ -13,7 +13,7 @@ int led_state = LOW;
 void setup() {
   pinMode(led_pin, OUTPUT);
   noInterrupts();
-  pulse_interval = ( pulse_rate / 1000.0 ) * ( 1000.0 / power_comsumption ) * 3600.0;
+  pulse_interval = ( pulse_rate / 1000.0 ) * ( 1000.0 / power_consumption ) * 3600.0;
   last_pulse = millis();
 }
 
