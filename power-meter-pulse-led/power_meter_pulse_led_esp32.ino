@@ -3,10 +3,6 @@
 
   A simple Sketch that attempts to simulate the pulsing LED on a Power Meter.
 
-  Some Meters have a LED that blinks (pulses) in relation to your power consumption.
-  These LEDs usually have a pulse rate of a 1.000 blinks (pulses) for every kWh consumed.
-  Some Power Meters really like to 'have the LED blinking' though, and use a pulse rate set to 10.000!
-  
   This ESP32 version tries to improve accuracy by using hardware timers, interrupts and using the GPIO registers 'directly', instead of using digitalWrite()
 
   Created in the spring of 2023
