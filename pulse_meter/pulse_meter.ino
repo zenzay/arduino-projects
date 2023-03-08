@@ -22,7 +22,7 @@ uint64_t last_update = 0;                // microseconds of last pulse
 uint64_t total_pulses = 0;               // count total pulses
 uint64_t last_count = 0;                 // last count of totals - used to check if we need to take action in loop()
 
-
+// NOTE: This really needs some kind of a timeout function -- if we havent received a pulse within a certain time window (say 5 minutes), we assume 0 W
 
 void ARDUINO_ISR_ATTR isr() {
   pulse_micros = micros();                   // get current micros
