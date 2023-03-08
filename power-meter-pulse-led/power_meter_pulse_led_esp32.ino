@@ -5,7 +5,7 @@
 
   This ESP32 version tries to improve accuracy by using hardware timers, interrupts and using the GPIO registers 'directly', instead of using digitalWrite().
   
-  Testing so far is disappointing. I have not tested it with lower intervals than 10 micros, but it seems less accurate
+  Testing has, so far, given disappointing results. I have not tested it with lower intervals than 10 micros, but it seems less accurate
   than just bruteforcing it in the loop() instead of using interrupts.
 
   Created in the spring of 2023
