@@ -3,7 +3,10 @@
 
   A simple Sketch that attempts to simulate the pulsing LED on a Power Meter.
 
-  This ESP32 version tries to improve accuracy by using hardware timers, interrupts and using the GPIO registers 'directly', instead of using digitalWrite()
+  This ESP32 version tries to improve accuracy by using hardware timers, interrupts and using the GPIO registers 'directly', instead of using digitalWrite().
+  
+  Testing so far is disappointing. I have not tested it with lower intervals than 10 micros, but it seems less accurate
+  than just bruteforcing it in the loop() instead of using interrupts.
 
   Created in the spring of 2023
   by Jens Hansen
@@ -13,7 +16,7 @@
 #define BASE_PULSE_RATE 1000          // the base pulse rate. 1000 blinks with each kWh used.
 #define MICROS_HOUR 3600000000        // micros per hour 
 #define DEF_PULSE_DUR 50000           // default pulse duration in micros
-#define DEF_INTERVAL 10              // default interval in micros
+#define DEF_INTERVAL 100              // default interval in micros
 
 // set the following constants according to your wishes
 const uint8_t led_pin = 17;              // gpio number of led pin
