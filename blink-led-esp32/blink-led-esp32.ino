@@ -26,23 +26,23 @@
 
 */
 
-const uint8_t led_pin = 17;       // GPIO number of LED pin
-hw_timer_t * timer = NULL;        // Our hardware timer structure
-uint8_t state = LOW;              // Initial LED state
-uint32_t interval = 1000000;      // Blink interval in microseconds
+const uint8_t led_pin = 17;         // GPIO number of LED pin
+const uint32_t interval = 1000000;  // Blink interval in microseconds
+hw_timer_t * timer = NULL;          // The hardware timer structure
+uint8_t state = LOW;                // Initial LED state
 
 // The OnTimer function called by timer interrupts
 void IRAM_ATTR onTimer()
 {
-    state = !state;         // Toogle state
+    state = !state;         // Toogle LED state
     if (state)
     {
-      // Set the bit = Turn LED On
+      // Set the gpio bit = Turn LED On
       GPIO.out_w1ts = ((uint32_t)1 << led_pin);
     }
     else
     {
-      // Clear the bit = Turn LED Off
+      // Clear the gpio bit = Turn LED Off
       GPIO.out_w1tc = ((uint32_t)1 << led_pin);
     }
 }
