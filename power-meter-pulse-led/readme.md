@@ -18,5 +18,5 @@ Assets
 ------
 Here's a gif of the test-bed I used to test the accuracy.
 
-![pulse_led_test_bed](./assets/images/power_meter_test_bed_2.gif)
+![pulse_led_test_bed](./assets/images/power_meter_test_bed.gif)
 
