@@ -1,7 +1,7 @@
 Power Meter Pulse LED
 =====================
 
-A simple Sketch that attempts to simulate the pulsing LED on a Power Meter.
+A Sketch that attempts to simulate the pulsing LED on a Power Meter.
 
 Some Electricity Meters have a LED that pulses in relation to your power consumption.
 These LEDs usually have a pulse rate of a 1.000 pulses for every kWh consumed.
