@@ -31,7 +31,7 @@ void setup()
   pinMode(led_pin, OUTPUT);
   // calculate the pulse interval from specified power consumption and pulse rate
   pulse_interval = MICROS_PER_HOUR / power_consumption * (BASE_PULSE_RATE / pulse_rate); 
-  last_pulse = micros();        // initial milliseconds
+  last_pulse = micros();        // initial microseconds
   led_state = LOW;              // initial led state
 }
 
