@@ -12,7 +12,7 @@ Components
 
 * A White LED (other colours might work).
 * A 330Ω resistor (or anything from 220 to 1k).
-* An ESP board (I recommend an ESP32, but an ESP8266 might work for you)
+* An ESP (I recommend an ESP32, but an ESP8266 might work for you)
 
 Assets
 ------
