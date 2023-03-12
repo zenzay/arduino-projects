@@ -22,7 +22,7 @@ const float pulse_rate = 1000;            // pulse rate you wish to simulate
 const uint32_t pulse_duration = 50000;    // how many micros to keep the led on
 const bool random_power = true;           // randomize (pseudo) power consumption
 const int power_min = 100;                // minimum random power consumption
-const int power_max = 5000;               // maximum random power consumption
+const int power_max = 1000;               // maximum random power consumption
 
 uint32_t now;                             // current milliseconds fetched at start of loop
 uint32_t last_pulse;                      // milliseconds at last pulse
